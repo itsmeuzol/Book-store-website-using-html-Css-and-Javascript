@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../CSS/MAIN.css">
+</head>
+<style>
+    .header
+        {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url("../Images/Blog/Background.png");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .blog-main
+        {
+            min-height: 300vh;
+            padding: 3%;
+            margin: 0px 0px 0px 80px;
+            width: 1100px;
+            text-align: center;
+        }
+        .blog-main h1
+        {
+            color: white;
+            width: 500px;
+            margin-left: 300px;
+            border-style: groove;
+            font-size: 27px;
+        }
+        .blog-main p
+        {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(22, 22, 21);
+            line-height: 22px;
+        }
+        .blog-main img{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .div-1 img{
+            width: 100%;
+            float: left;
+        }
+        /*FOR JAVASCRIPT IMAGE SLIDESHOW*/
+        #slider1
+        {
+            margin-left: 6rem;
+            height: 30rem;
+        }
+        #slider1 img
+        {
+            width: 60rem;
+            border-radius: 20px;
+        }
+        .div-2a
+        {
+            height: 650px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 800px 280px;
+        }
+        .div-2i{
+            height: 180px;
+            width: 95%;
+            background-color: rgb(139, 179, 211);
+        }
+        .div-2i img
+        {
+            height: 180px;
+            margin-top: 0px;
+        }
+        .div-3a
+        {
+            height: 650px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 280px 800px;
+        }
+        .div-3i
+        {
+            height: 180px;
+            width: 95%;
+            background-color: rgb(133, 187, 231);
+
+        }
+        .div-3i img
+        {
+            width: 100%;
+            margin-top: 0px;
+            height: 180px;
+        }
+        
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <a href="../Index.html"> <img src="../images/Home/Logo.png" class="Logo" alt="Logo"> </a>
+            <div class="nav-links">
+                <ul> <b>
+                    <li> <a href="../Index.html">HOME</a> </li>  
+                    <li> <a href="../pages/product.html">PRODUCT</a></li>
+                    <li> <a href="../pages/Blog.html">BLOG</a></li>
+                    <li> <a href="../pages/Research.html">RESEARCH</a></li>
+                    <li> <a href="../pages/Contact.html">CONTACT US</a></li>
+                    </b>
+                </ul>
+            </div>
+        </nav>
+        <!---It is Connect with us box-->
+        <div class="box">
+            <div class="box-texts">
+                <h1 style="color: white;">CONNECT WITH US</h1> <br>
+                <div class="icons">
+                    <img src="../images/Home/logos/Facebook.png" alt="facebook">
+                </div>
+                <a href=""><p>Facebook </p> </a> <br>
+                <div class="icons">
+                    <img src="../images/Home/logos/Instagram.jpg" alt="Instagram">
+                </div>
+                <a href=""><p>Instagram</p> </a> <br>
+                <div class="icons">
+                    <img src="../images/Home/logos/twitter.png" alt="twitter">
+                </div>
+                <a href=""><p>Twitter</p> </a> <br>
+                </div>
+        </div>  
+        <!--Main div For blog-->
+        <div class="blog-main">
+            <div class="div-1">
+                <h1>Impact of Technologies in Our Daily Lives</h1> <br>
+                <p> <b>
+                Over the last few years, Technology has become more and more part of our lives. Take
+                a moment to look around you. What do you notice? How many gadgets, computers and tech do you see? Did you
+                include the one you're reading this on?
+                See how we are surrounded by technical appliances. The laptop on your lap, the mobile phone next to your bed,
+                the T.V screen infront of you, the WiFi router, even the headphone- all these are examples of how technology
+                has transformed every part of our lives. <br>
+                According to my view, technology is inevitable in our day-to-day lives. In today's 
+                dynamic world, life without technology is pointless. As being student of IT, I know the importance of
+                technology in my daily life. From waking up in the morning to going back to bed in night, Everytime I am 
+                surrounded by technical equipments.
+                 The purpose of technology is to make life easier and solves many problems of mankind but has its 
+                effects all been positive? In this blog, we will precisely see that.
+                </b> </p>
+                <div class="slider">
+                    <div id="slider1">
+                        <img src="../images/blog/1.jpg" alt="1">
+                    </div>
+                    <p>Fig: Technlogies in our daily life</p>
+                <!---JAVASCRIPT FOR IMAGE SLIDER-->
+                    <script>
+                    var images = ['../images/blog/2.jpg','../images/blog/3.jpg', '../images/blog/5.jpg', '../images/blog/4.jpg', '../images/blog/7.jpg', '../images/blog/9.jpg'];
+                    var imgs = document.getElementById("slider1");
+                    var x = 0;
+                    setInterval(imageSlider, 2000);
+                    function imageSlider() {
+                        if (x < images.length) {
+                            x = x + 1;
+                        } else {
+                            x = 1;
+                        }
+                        imgs.innerHTML = "<img src = " + images[x - 1] + ">";
+                    }
+                     </script>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="div-2">
+                <h2 style="color: whitesmoke; border: 2px solid; width: 400px; margin-left: 350px;">
+                    Positives impact of technology:<h2>
+                     <br>
+                    <p>Without a doubt, technology has made all our lives easier and comfortable from
+                    the past two decades. Technology has impacted our daily lives positively in different ways.
+                    Some of them are:
+                    </p><br>
+                    <div class="div-2a">
+                        <div class="div-2i">
+                            <p style="text-decoration: underline;"> Smartphone revolution:</p>
+                            <p>The advancement in Smartphone has simplified our lives drastically. Nowdays,
+                                people can connect with their loved ones easily and frequently through video calls 
+                                and instant meeting services. Different tasks like reading and sending emails, 
+                                creating documents and slides don't require a PC anymore. Additionally, the 
+                                rapid expansion of e-commerce and internet-based companies is directly proportional to the 
+                                rapid proliferation of smartphones.
+                            </p>
+                        </div>
+                        <div class="div-2i">
+                            <img src="../images/blog/mobile.jpg" alt="mobile">
+                        </div>
+
+                        <div class="div-2i">
+                            <p style="text-decoration: underline;"> Advanced Education:</p>
+                            <p style>Over the past few years, the most dramatically improved area because of
+                                technology is Education. Before the advancement of technology,
+                                we'd have to go to class physically and have to go to the
+                                library to do research. But due to Online courses, accessibility of web conference,
+                                unlimited online resources for research its been easy to work. Likewise, during pandemic
+                                when educational sectors were shut, technology played a huge role in filing the gap.
+                                Online classes made it possible for students to enroll without leaving home.
+                            </p>
+                        </div>
+
+                        <div class="div-2i">
+                            <img src="../images/blog/online class.jpeg" alt="online">
+                        </div>
+
+                        <div class="div-2i">
+                            <p style="text-decoration: underline;"> Online shopping:</p>
+                            <p>Upgradement and advancement in technology have made it easier for all of us
+                                to access the internet, resulting in making online shopping popular now than ever.
+                                Online shopping makes shopping effortless and enjoyable for everyone. Nowdays
+                                people prefer online shopping without leaving the house instead of wasting 
+                                hours in the shopping malls.
+                            </p>
+                        </div>
+
+                        <div class="div-2i">
+                            <img src="../images/blog/Online shopping.jpg" alt="shopping">
+                        </div>
+                </div>   
+
+            </div> 
+            <hr> 
+            <br>
+
+            <div class="div-3">
+                <h2 style="color: whitesmoke; border: 2px solid; width: 400px; margin-left: 350px;" >
+                    Negatives impact of technology:<h2>
+                     <br>
+                    <p>As much as we praise technology for the convenience it brought to our lives,
+                    various aspects of it have impacted our life in many ways. Some of them are:
+                    </p> <br>
+                <div class="div-3a">
+                    <div class="div-3i">
+                        <img src="../images/blog/social skills.jpg" alt="social">
+                    </div>
+                    <div class="div-3i">
+                        <p style="text-decoration: underline;"> Diminishes Social Skills and Relationships:</p>
+                        <p>As we use mobile devices more and more, we're more dependent to be virtually connected
+                            with family and friends, rather than spending time with loved oned physically.
+                            We're more likely to text, call on social media, or connect with each other 
+                            via online gaming than actually meeting them in person. I am using more time on mobile 
+                            battleground rather than playground. 
+                             Social communication Skills are also in jeopardy due to tech overuse.
+                        </p>
+                    </div>
+
+                    <div class="div-3i">
+                        <img src="../images/blog/lazy.jpg" alt="lazy">
+                    </div>
+                    <div class="div-3i">
+                        <p style="text-decoration: underline;"> Less-active lifestyle:</p>
+                        <p>While the revolution of smartphone has made our lives comfortable, it has also made
+                            us lazy. Today, entire world is at our finger, and thus we don't have to struggle
+                            to get things done like we did before. Our sophisticated lifestyle and absence of physical
+                            exercise can be partly attributed to the over-use and dependence on mobile phones. 
+                            In this new era, mobile phone addiction is creating a negative impact on our lives.
+                        </p>
+                    </div>
+                    <div class="div-3i">
+                        <img src="../images/blog/sleep issue.jpg" alt="sleep">
+                    </div>
+
+                    <div class="div-3i">
+                        <p style="text-decoration: underline;">Sleep issues:</p>
+                        <p>We are so addicted to using tech and gadgets that we don't even leave using the 
+                            devices in our bedroom. This causes intrusion with sleep in a various ways. As per 
+                            the recent research and study, it has found that excessive use of technical 
+                            equipments before going to bed impacts the sleep on physiological and psychological levels.
+                            Over exposure of "blue light" coming out of the screen decreases production of
+                            melatonin in body which makes it difficult for people to fall asleep. Lack of sleep 
+                            makes people lethargic and less alert.
+                        </p>
+                    </div>
+                </div>
+                <hr style="color: black;"> <br>
+                <p> In nutshell, technology is an eminent and inevitable part our daily life. Though it have a few 
+                negative effects, it also provide a wide range of positive impacts on our daily life. Technology is both
+                boon and bane to our life. Every aspects have positive and negative effects. The majority of the adverse
+                effects of technology emerges from its missues. The way we handle the utilization of tech can help
+                or harm ourselves. Instead of blaming or cursing the technology, we need to use that in a more disciplined
+                and healthy way. Knowing about the consequences help in taking steps to recognize and reduce them so that
+                we can make the most out of its positive impacts.
+                </p>
+
+            </div>
+            <br>
+                <br>
+                <div class="writer" style="float: right;    " >
+                    - Ujjwal Dahal, 2nd April 2022
+                </div>
+            </div>
+        <div>
+    <!--STARTING OF FOOTER-->
+    <section class="footer">
+        <div class="footer1">
+            <h1>Kitabi Sansar </h1>
+            <p>Birendra Chowk</p>
+            <p>Tuslipur-6, Dang</p>
+            <p></p>
+            <!---kitabi sansar footer logo-->
+            <div id="Logo">
+                <img src="../images/Home/Logo.png" alt="logo">
+            </div>
+            <!---HEADING OF FOOTER BOX-->
+            <div class="properties">
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>ABOUT KITABI SANSAR:</h1> <br>
+                        <p style="line-height: 25px;">Kitabi Sansar, a renown <br> online
+                            book shopping store, physically located in Birendra Chowk, Tuslipur-6, Dang.
+                            It aims to enlarge the group of book readers. Here, user can put details of Book
+                            , can be member of store, buy online books at the lowest price.
+                        </p>
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>QUICK LINKS:</h1> <br>
+                        <a href="../Index.html"><p>Best collections </p> </a> <br>
+                        <a href="../pages/product.html"><p>New arrivals </p> </a> <br>
+                        <a href="../pages/product.html"><p>Sci-fi Collections</p> </a> <br>
+                        <a href="../pages/product.html"><p>Comics Collections</p> </a> <br>
+                        <a href="..pages/product.html"><p> Romance Novels </p> </a> <br>
+                        <a href="../pages/product.html"><p> Thriller and Crime Novels </p> </a> <br>  
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>OTHERS:</h1><br>
+                        <a href="../Index.html"><p>About Us</p> </a> <br>
+                        <a href="../pages/product.html"><p>Product</p> </a> <br>
+                        <a href="../pages/Blog.html"><p>Blog </p> </a> <br>
+                        <a href="../pages/Research.html"><p>Research</p> </a> <br>
+                        <a href="../pages/Contact.html"><p>Contact</p> </a> <br>
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>CONNECT WITH US:</h1> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Facebook.png" alt="facebook">
+                        </div>
+                        <a href=""><p>Facebook </p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Instagram.jpg" alt="Instagram">
+                        </div>
+                        <a href=""><p>Instagram</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/twitter.png" alt="twitter">
+                        </div>
+                        <a href=""><p>Twitter</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Youtube.png" alt="youtube">
+                        </div>
+                        <a href=""><p>Youtube</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/home/logos/pinterest.png" alt="pinterest">
+                        </div>
+                        <a href=""><p>Pinterest</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/home/logos/dscord.jpg" alt="discord">
+                        </div>
+                        <a href=""><p>Discord</p> </a> <br>
+                    </div>    
+                </div>
+            </div>  
+            <span style="color: rgb(212, 209, 209); margin: 0px 0px 0px 370px;" 
+                
+                >&copy2021 Copyright KitabiSansar.com</span>
+        </div> 
+    </section>
+</body>
+</html>

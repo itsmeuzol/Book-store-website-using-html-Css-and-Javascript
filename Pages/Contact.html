@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/MAIN.css">
+    <script type="text/JavaScript" src="../JavaScript/formvalidation.js"></script>
+    <style>
+        .header
+        {
+            min-height: 130vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(41, 65, 112, 0.7), rgba(59, 71, 119, 0.7)), url("../images/contact us/Background.png");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        /*CUSTOMER CARE PIC*/
+        .Picture img
+        {
+            width: 17%;
+            height: 200px;
+            margin-top: -8rem;
+            margin-right: 10px;
+            border-radius: 30px;
+            float: right;
+        }
+        #small-div
+        {
+            width: 100%;
+            position: absolute;
+            color: white;
+            text-align: center;
+        }
+        /*DIV FOR CONTACT INFORMATION AND FORM*/
+        .maindiv
+        {
+            display: grid;
+            width: 980px;
+            height: 550px;
+            margin: 90px 0px 0px 150px;
+            grid-template-columns: 1fr;
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+        /*CONTACT INFORMATION*/
+        .grid-box1
+        {
+            background-image: url("../Images/contact us/Contact\ us.jpg");
+            height: 550px;
+            width: 400px;
+            position: absolute;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        .grid-box2 
+        {
+            width: 572px;
+            justify-self: right;
+            background-color: rgb(235, 231, 231);
+            text-align: center;
+            border: 2px solid wheat;
+        }
+        .grid-box2 form{
+            margin-top: 30px;
+        }
+        .box-a
+        {
+            display: grid;
+            height: 468px;
+            grid-template-rows: 100px 100px;
+        }
+        .box-a1
+        {
+            margin-top: 40px;
+            background-color: aquamarine;
+            height: 90px;
+            width: 400px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .box-a1 img{
+            height: 70px;
+            float: left;
+            margin-top: 4px;
+            padding: 1%;
+            border-radius: 20px;
+
+        }
+        .box-a1 p
+        {
+            margin-top: 14px;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            font-size: 14px;
+        }
+        .logos-name img{
+            height: 40px;
+            width: 40px;
+            margin: 0px 0px 2px 35px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="../Index.html"> <img src="../images/Home/Logo.png" class="Logo" alt="Logo"> </a>
+            <div class="nav-links">
+                <ul> <b>
+                    <li> <a href="../Index.html">HOME</a> </li>  
+                    <li> <a href="../pages/product.html">PRODUCT</a></li>
+                    <li> <a href="../pages/Blog.html">BLOG</a></li>
+                    <li> <a href="../pages/Research.html">RESEARCH</a></li>
+                    <li> <a href="../pages/Contact.html">CONTACT US</a></li>
+                    </b>
+                </ul>
+            </div>
+        </nav>
+        <!---TO WRITE CONTACT US IN CENTER-->
+        <div id="small-div">
+            <h1 style="color:blanchedalmond;">GET IN TOUCH</h1>
+            <p>Any queries or remarks? Feel free to write us a message!</p>
+            <p>We would love to hear from you.</p>
+        </div>
+        <!--Contact us pic-->
+        <div class="Picture">
+            <img src="../images/contact us/Contact.jpg" alt="Contact">  
+        </div>
+        <!---CONTACT US MAIN DIV FOR DESCRIPTION AND TABLE-->
+        <div class="maindiv">
+            <!--CONTACT INFORMATION-->
+            <div class="grid-box1">
+                <h1>Contact Information</h1>
+                <br>
+                <p style="font-size: 17px;">Message us and let us know how we. <br>
+                Fill up the form and we will respond as soon as possible.</p>
+                <div class="box-a">
+                    <div class="box-a1">
+                        <img src="../images/contact us/Address.jpg" alt="Address">
+                        <p>Birendra Chowk
+                            <br>
+                            Tuslipur-6, Dang
+                            <br>(Near Ganesh Dairy)
+                        </p>
+                    </div>
+                    <div class="box-a1">
+                        <img src="../images/contact us/Phone.jpg" alt="phone">
+                        <p>
+                            +9779809877650
+                            <br>
+                            +9779846343082
+                            <br>
+                            +9779818090370
+                        </p>
+                    </div>
+                    <div class="box-a1">
+                        <img src="../images/contact us/Email.jpg" alt="Email">
+                        <p>ujjwaldahal86@gmail.com
+                            <br>
+                            kitabiSansar@gmail.com
+                            sansarkitab123@gmail.com
+                        </p>
+                    </div>
+                    <div class="box-a1" style="height: 70px;background-color: rgb(183, 230, 241);">
+                      <b>  Follow Us:</b>
+                        <div class="logos-name">
+                        <a href=""><img src="../images/Home/logos/Facebook.png" alt="Fb"></a> 
+                        <a href=""><img src="../images/home/logos/Instagram.jpg" alt="Insta"></a>
+                        <a href=""><img src="../images/home/logos/twitter.png" alt="ter"></a>
+                        <a href="" ><img  src="../images/home/logos/pinterest.png" alt="pin"></a>
+                        </div>
+                    </div>
+                    <span style="color: rgba(37, 223, 192, 0.904);" 
+                        >&copy2021 Copyright KitabiSansar.com</span>
+                </div> 
+            </div>
+            <div class="grid-box2">
+                <p style="font-size:large;"><b>Send Us a Message:</b></p>
+
+                <form name="messageform" onsubmit="validateform()">
+
+                <div class="form-container">
+
+                <p><b>First name: <input type="text" name="Firstname" id="fname" placeholder="Enter your Firstname" maxlength="15" > 
+                &nbsp;Last name: <input type="text" name="Lastname" id="lname" placeholder="Enter your Lastname" maxlength="20">
+                </b></p> <br> <br>
+
+                <p><b>Email: <input type="text" name="Email" id="email"  placeholder="Enter Email">
+                &nbsp; Phone: <input type="number" name="Phone" id="phone" placeholder="Enter PhoneNumber">
+                </b></p>
+                </p> <br> <br>
+
+                <p><b>Gender: &nbsp;</b><input type="radio" name="gender" value="male">&nbsp;Male &emsp;
+                <input type="radio" name="gender" value="female">&nbsp;Female &emsp;
+                <input type="radio" name="gender" value="others">&nbsp;Others
+                <br> <br>
+
+                <p><b>Message:</b> <br> <br><textarea name="message" id="message" cols="70" rows="10" placeholder="Enter Message:"
+                ></textarea></p>
+                </p> <br>
+                
+                <p><input type="submit" value="Submit"></p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+    <!--STARTING OF FOOTER-->
+    <section class="footer">
+        <div class="footer1">
+            <h1>Kitabi Sansar </h1>
+            <p>Birendra Chowk</p>
+            <p>Tuslipur-6, Dang</p>
+            <p></p>
+            <!---kitabi sansar footer logo-->
+            <div id="Logo">
+                <img src="../images/Home/Logo.png" alt="logo">
+            </div>
+            <!---HEADING OF FOOTER BOX-->
+            <div class="properties">
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>ABOUT KITABI SANSAR:</h1> <br>
+                        <p style="line-height: 25px;">Kitabi Sansar, a renown <br> online
+                            book shopping store, physically located in Birendra Chowk, Tuslipur-6, Dang.
+                            It aims to enlarge the group of book readers. Here, user can put details of Book
+                            , can be member of store, buy online books at the lowest price.
+                        </p>
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>QUICK LINKS:</h1> <br>
+                        <a href="../Index.html"><p>Best collections </p> </a> <br>
+                        <a href="../pages/product.html"><p>New arrivals </p> </a> <br>
+                        <a href="../pages/product.html"><p>Sci-fi Collections</p> </a> <br>
+                        <a href="../pages/product.html"><p>Comics Collections</p> </a> <br>
+                        <a href="../pages/product.html"><p> Romance Novels </p> </a> <br>
+                        <a href="../pages/product.html"><p> Thriller and Crime Novels </p> </a> <br>  
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>OTHERS:</h1><br>
+                        <a href="../Index.html"><p>About Us</p> </a> <br>
+                        <a href="../pages/product.html"><p>Product</p> </a> <br>
+                        <a href="../pages/Blog.html"><p>Blog </p> </a> <br>
+                        <a href="../pages/Research.html"><p>Research</p> </a> <br>
+                        <a href="../pages/Contact.html"><p>Contact</p> </a> <br>
+                    </div>    
+                </div>
+                <div class="footer_box">
+                    <div class="box-texts1">
+                        <h1>CONNECT WITH US:</h1> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Facebook.png" alt="facebook">
+                        </div>
+                        <a href=""><p>Facebook </p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Instagram.jpg" alt="Instagram">
+                        </div>
+                        <a href=""><p>Instagram</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/twitter.png" alt="twitter">
+                        </div>
+                        <a href=""><p>Twitter</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/Home/logos/Youtube.png" alt="youtube">
+                        </div>
+                        <a href=""><p>Youtube</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/home/logos/pinterest.png" alt="pinterest">
+                        </div>
+                        <a href=""><p>Pinterest</p> </a> <br>
+                        <div class="icons">
+                            <img src="../images/home/logos/dscord.jpg" alt="discord">
+                        </div>
+                        <a href=""><p>Discord</p> </a> <br>
+                    </div>    
+                </div>
+            </div>  
+            <span style="color: rgb(212, 209, 209); margin: 0px 0px 0px 370px;" 
+                
+                >&copy2021 Copyright KitabiSansar.com</span>
+        </div> 
+    </section>
+     
+</body>
+</html>
